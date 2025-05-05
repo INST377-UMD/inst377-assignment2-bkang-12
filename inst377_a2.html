@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Home - INST377 A2</title>
+        <link rel="stylesheet" href="inst377_a2.css">
+        <script src="inst377_a2.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    </head>
+
+    <body style="background-color: lightgoldenrodyellow">
+        <div class = "header">
+            <h1>Home</h1>
+        </div>
+
+        <div class = "nav">
+            <a href="inst377_a2.html">Home</a>
+            <a href="inst377_a2_stocks.html">Stocks</a>
+            <a href="inst377_a2_dogs.html">Dogs</a>
+        </div>
+
+        <div class = "main">
+            <h1> try some of these things</h1>
+
+            <div class = "button">
+                <a class="button-52" role="button" href = "inst377_a2_stocks.html">Stocks</a>
+                <a class="button-52" role="button" href = "inst377_a2_dogs.html">Dogs</a>
+            </div>
+
+            <div class = "quote">
+                <h2>Quote of the Page Load</h2>
+                <p id="qotp"></p>
+            </div>
+
+            <div class="audio">
+                <h2>navigate with audio!!!!!</h2>
+                <p>ensure your mic is enabled to do this</p>
+                <ul>
+                    <li>navigate to a different page</li>
+                    <ul>
+                        <li>say: <b>navigate to &lt;page&gt;</b></li>
+                    </ul>
+        
+                    <li>change page color</li>
+                    <ul>
+                        <li>say: <b>change the color to &lt;color&gt;</b></li>
+                    </ul>
+        
+                    <li>say hello back to you</li>
+                    <ul>
+                        <li>say: <b>hello</b></li>
+                    </ul>
+                </ul>
+        
+                <div class="audio-button">
+                    <button id="enable" onclick="enableListening()">turn on listening</button>
+                    <button id="disable" onclick="disableListening()">turn off listening</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
