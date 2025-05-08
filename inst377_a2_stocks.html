@@ -3,6 +3,8 @@
         <title>Stocks - INST377 A2</title>
         <link rel="stylesheet" href="inst377_a2.css">
         <script src="inst377_a2.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     </head>
     <body style="background-color: lightgoldenrodyellow">
@@ -28,10 +30,14 @@
             </select>
             <br>
             <br>
-            <button type="submit">Lookup!</button>
+            <button type="submit" onclick = "event.preventDefault(); getStocks()">Lookup!</button>
         </form>
+
+        <div id = "graph">
+            <canvas id = "chart"></canvas>
+        </div>
       
-        <table id="stocksTable">
+        <table id="table">
             <thead>
                 <tr>
                     <th>Ticker</th>
@@ -39,6 +45,7 @@
                     <th>Sentiment</th>
                 </tr>
             </thead>
+            <tbody></tbody>
         </table>
 
         <div class="audio">
